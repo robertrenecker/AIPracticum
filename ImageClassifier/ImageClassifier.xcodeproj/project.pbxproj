@@ -7,14 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2221D374227A5AED00196209 /* UploadCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2221D373227A5AED00196209 /* UploadCollectionViewCell.swift */; };
+		22593B33227A2650003B9C0B /* ImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 22593B32227A2650003B9C0B /* ImageClassifier.mlmodel */; };
+		22EDF11A227A306B006DF378 /* TabBarHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EDF119227A306B006DF378 /* TabBarHeight.swift */; };
+		22EDF11C227A43DF006DF378 /* UploadDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EDF11B227A43DF006DF378 /* UploadDetailViewController.swift */; };
+		22EDF11E227A56CA006DF378 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22EDF11D227A56CA006DF378 /* GoogleService-Info.plist */; };
 		67FDDE2C2277CF6D0058754F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FDDE2B2277CF6D0058754F /* AppDelegate.swift */; };
 		67FDDE2E2277CF6D0058754F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FDDE2D2277CF6D0058754F /* ViewController.swift */; };
 		67FDDE312277CF6D0058754F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67FDDE2F2277CF6D0058754F /* Main.storyboard */; };
 		67FDDE332277CF700058754F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67FDDE322277CF700058754F /* Assets.xcassets */; };
 		67FDDE362277CF700058754F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67FDDE342277CF700058754F /* LaunchScreen.storyboard */; };
+		8AFFC11BE0C1D46C692E62A2 /* Pods_ImageClassifier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E56EF9D9A7BBD3CBCBDCBF /* Pods_ImageClassifier.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2221D373227A5AED00196209 /* UploadCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadCollectionViewCell.swift; sourceTree = "<group>"; };
+		22593B32227A2650003B9C0B /* ImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = ImageClassifier.mlmodel; path = ../../ImageClassifier.mlmodel; sourceTree = "<group>"; };
+		22EDF119227A306B006DF378 /* TabBarHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarHeight.swift; sourceTree = "<group>"; };
+		22EDF11B227A43DF006DF378 /* UploadDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadDetailViewController.swift; sourceTree = "<group>"; };
+		22EDF11D227A56CA006DF378 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2D3DEAC4D04724C49F5EB861 /* Pods-ImageClassifier.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageClassifier.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImageClassifier/Pods-ImageClassifier.release.xcconfig"; sourceTree = "<group>"; };
 		67FDDE282277CF6D0058754F /* ImageClassifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageClassifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67FDDE2B2277CF6D0058754F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67FDDE2D2277CF6D0058754F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +34,8 @@
 		67FDDE322277CF700058754F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67FDDE352277CF700058754F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67FDDE372277CF700058754F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79E56EF9D9A7BBD3CBCBDCBF /* Pods_ImageClassifier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageClassifier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		820596023E9C65CDCF75B71F /* Pods-ImageClassifier.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageClassifier.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImageClassifier/Pods-ImageClassifier.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AFFC11BE0C1D46C692E62A2 /* Pods_ImageClassifier.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +55,8 @@
 			children = (
 				67FDDE2A2277CF6D0058754F /* ImageClassifier */,
 				67FDDE292277CF6D0058754F /* Products */,
+				8165DD27B22C3717A7123379 /* Pods */,
+				ABEDB5A69D6A2033D107AAFF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +72,35 @@
 			isa = PBXGroup;
 			children = (
 				67FDDE2B2277CF6D0058754F /* AppDelegate.swift */,
-				67FDDE2D2277CF6D0058754F /* ViewController.swift */,
-				67FDDE2F2277CF6D0058754F /* Main.storyboard */,
 				67FDDE322277CF700058754F /* Assets.xcassets */,
 				67FDDE342277CF700058754F /* LaunchScreen.storyboard */,
 				67FDDE372277CF700058754F /* Info.plist */,
+				22EDF11D227A56CA006DF378 /* GoogleService-Info.plist */,
+				22593B32227A2650003B9C0B /* ImageClassifier.mlmodel */,
+				67FDDE2F2277CF6D0058754F /* Main.storyboard */,
+				22EDF119227A306B006DF378 /* TabBarHeight.swift */,
+				67FDDE2D2277CF6D0058754F /* ViewController.swift */,
+				22EDF11B227A43DF006DF378 /* UploadDetailViewController.swift */,
+				2221D373227A5AED00196209 /* UploadCollectionViewCell.swift */,
 			);
 			path = ImageClassifier;
+			sourceTree = "<group>";
+		};
+		8165DD27B22C3717A7123379 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				820596023E9C65CDCF75B71F /* Pods-ImageClassifier.debug.xcconfig */,
+				2D3DEAC4D04724C49F5EB861 /* Pods-ImageClassifier.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ABEDB5A69D6A2033D107AAFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79E56EF9D9A7BBD3CBCBDCBF /* Pods_ImageClassifier.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 67FDDE3A2277CF700058754F /* Build configuration list for PBXNativeTarget "ImageClassifier" */;
 			buildPhases = (
+				691B6B5B0F10D4AFB76EA18F /* [CP] Check Pods Manifest.lock */,
 				67FDDE242277CF6D0058754F /* Sources */,
 				67FDDE252277CF6D0058754F /* Frameworks */,
 				67FDDE262277CF6D0058754F /* Resources */,
+				3C161478E674F2CA0FDCFB5C /* [CP] Embed Pods Frameworks */,
+				2E2C905131C2C20AD32F4E31 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67FDDE362277CF700058754F /* LaunchScreen.storyboard in Resources */,
+				22EDF11E227A56CA006DF378 /* GoogleService-Info.plist in Resources */,
 				67FDDE332277CF700058754F /* Assets.xcassets in Resources */,
 				67FDDE312277CF6D0058754F /* Main.storyboard in Resources */,
 			);
@@ -130,12 +173,86 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2E2C905131C2C20AD32F4E31 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ImageClassifier/Pods-ImageClassifier-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C161478E674F2CA0FDCFB5C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ImageClassifier/Pods-ImageClassifier-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CardSlider/CardSlider.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+				"${BUILT_PRODUCTS_DIR}/PryntTrimmerView/PryntTrimmerView.framework",
+				"${BUILT_PRODUCTS_DIR}/SteviaLayout/Stevia.framework",
+				"${BUILT_PRODUCTS_DIR}/YPImagePicker/YPImagePicker.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CardSlider.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PryntTrimmerView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stevia.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YPImagePicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ImageClassifier/Pods-ImageClassifier-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		691B6B5B0F10D4AFB76EA18F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImageClassifier-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		67FDDE242277CF6D0058754F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				67FDDE2E2277CF6D0058754F /* ViewController.swift in Sources */,
+				22EDF11C227A43DF006DF378 /* UploadDetailViewController.swift in Sources */,
+				22593B33227A2650003B9C0B /* ImageClassifier.mlmodel in Sources */,
+				2221D374227A5AED00196209 /* UploadCollectionViewCell.swift in Sources */,
+				22EDF11A227A306B006DF378 /* TabBarHeight.swift in Sources */,
 				67FDDE2C2277CF6D0058754F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,16 +397,15 @@
 		};
 		67FDDE3B2277CF700058754F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 820596023E9C65CDCF75B71F /* Pods-ImageClassifier.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XXY825S34M;
+				DEVELOPMENT_TEAM = 64ZFR3XB85;
 				INFOPLIST_FILE = ImageClassifier/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.ImageClassifierRobert;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ImageClassifierSam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -298,16 +414,15 @@
 		};
 		67FDDE3C2277CF700058754F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D3DEAC4D04724C49F5EB861 /* Pods-ImageClassifier.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XXY825S34M;
+				DEVELOPMENT_TEAM = 64ZFR3XB85;
 				INFOPLIST_FILE = ImageClassifier/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.ImageClassifierRobert;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ImageClassifierSam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

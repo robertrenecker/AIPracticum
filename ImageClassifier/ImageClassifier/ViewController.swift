@@ -8,16 +8,19 @@
 
 import UIKit
 import CoreML
+import YPImagePicker
+import Hero
+import SPStorkController
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        let imageModel =
         
+        self.navigationController?.navigationBar.isHidden = true
+        UITabBar.appearance().layer.borderWidth = 0.0
+        UITabBar.appearance().clipsToBounds = true
     }
-
-
+    
 }
 
