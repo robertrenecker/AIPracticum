@@ -26,54 +26,51 @@ class SavedImagesViewController: UIViewController, UICollectionViewDataSource {
             snapshot in
 
             let snapObject = snapshot.value as! NSDictionary
+            
+//            print("OBJ", snapObject)
+            
+            identifierHolder = snapObject["indentifier"] as! String
+            confidenceHolder = snapObject["confidence"] as! Int
+            
+            let dlLink = snapObject["downloadURL"] as! String
+            
+//            print("conf", confidenceHolder, "id", identifierHolder, "img", dlLink)
+            
+            self.downloadImages(confidence: confidenceHolder, identifier: identifierHolder, link: dlLink)
 
-            for item in snapObject {
-//                print("ITEM", item)
-
-                let key = item.key as! String
-
-                if key == "indentifier" {
-                    let indetifier = item.value as! String
-                    identifierHolder = indetifier
-                }
-
-                if key == "confidence" {
-                    let confidence = item.value as! Int
-                    confidenceHolder = confidence
-                }
-
-                if key == "downloadURL" {
-//                    print(item.value)
-                    let downloadLink = item.value as! String
-                    let imageStorageRef = Storage.storage().reference(forURL: downloadLink)
-                    imageStorageRef.downloadURL(completion: {
-                        (url, error) in
-
-                        if error != nil {
-                            print("error with download", error!)
-                        }else{
-                            do {
-                                let data = try Data(contentsOf: url!)
-                                let image = UIImage(data: data as Data)
-
-                                print("image", image, "confidence", confidenceHolder, "identifier", identifierHolder)
-                                
-                                self.images.append(imagePost(image: image!, confidence: confidenceHolder, identifier: identifierHolder))
-                                
-                                DispatchQueue.main.async {
-                                    
-                                    self.collectionView.reloadData()
-                                }
-                                
-                            }
-                            catch {
-                                print("Error with header photo")
-                            }
-                        }
-                    })
-                }
-            }
+            
         })
+    }
+    
+    func downloadImages(confidence: Int, identifier: String, link: String){
+        print("IN DOWLOAD WITH", confidence, identifier, link)
+        
+        let group = DispatchGroup()
+        group.enter()
+        
+        DispatchQueue.main.async {
+            let storageRef = Storage.storage().reference(forURL: link)
+            storageRef.downloadURL {
+                (url, error) in
+                
+                if let data = try? Data(contentsOf: url!) {
+                    if let image = UIImage(data: data){
+                        print("IMAGE", image)
+                        self.images.append(imagePost(image: image, confidence: confidence, identifier: identifier))
+                    }
+                }
+                group.leave()
+            }
+        }
+        
+        group.notify(queue: .main) {
+            print("download done")
+            print("conf", confidence, "id", identifier)
+            self.collectionView.reloadData()
+        }
+
+        
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
