@@ -10,7 +10,6 @@ import UIKit
 import CoreML
 import YPImagePicker
 import Hero
-import SPStorkController
 
 class ViewController: UIViewController {
     

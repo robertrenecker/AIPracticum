@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2221D374227A5AED00196209 /* UploadCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2221D373227A5AED00196209 /* UploadCollectionViewCell.swift */; };
 		22593B33227A2650003B9C0B /* ImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 22593B32227A2650003B9C0B /* ImageClassifier.mlmodel */; };
+		22E0E750227CC77900428D1F /* SavedImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E0E74F227CC77900428D1F /* SavedImagesViewController.swift */; };
+		22E0E752227CE28600428D1F /* UploadedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E0E751227CE28600428D1F /* UploadedCollectionViewCell.swift */; };
 		22EDF11A227A306B006DF378 /* TabBarHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EDF119227A306B006DF378 /* TabBarHeight.swift */; };
 		22EDF11C227A43DF006DF378 /* UploadDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EDF11B227A43DF006DF378 /* UploadDetailViewController.swift */; };
 		22EDF11E227A56CA006DF378 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22EDF11D227A56CA006DF378 /* GoogleService-Info.plist */; };
@@ -21,8 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2221D373227A5AED00196209 /* UploadCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadCollectionViewCell.swift; sourceTree = "<group>"; };
 		22593B32227A2650003B9C0B /* ImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = ImageClassifier.mlmodel; path = ../../ImageClassifier.mlmodel; sourceTree = "<group>"; };
+		22E0E74F227CC77900428D1F /* SavedImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedImagesViewController.swift; sourceTree = "<group>"; };
+		22E0E751227CE28600428D1F /* UploadedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadedCollectionViewCell.swift; sourceTree = "<group>"; };
 		22EDF119227A306B006DF378 /* TabBarHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarHeight.swift; sourceTree = "<group>"; };
 		22EDF11B227A43DF006DF378 /* UploadDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadDetailViewController.swift; sourceTree = "<group>"; };
 		22EDF11D227A56CA006DF378 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -81,7 +83,8 @@
 				22EDF119227A306B006DF378 /* TabBarHeight.swift */,
 				67FDDE2D2277CF6D0058754F /* ViewController.swift */,
 				22EDF11B227A43DF006DF378 /* UploadDetailViewController.swift */,
-				2221D373227A5AED00196209 /* UploadCollectionViewCell.swift */,
+				22E0E74F227CC77900428D1F /* SavedImagesViewController.swift */,
+				22E0E751227CE28600428D1F /* UploadedCollectionViewCell.swift */,
 			);
 			path = ImageClassifier;
 			sourceTree = "<group>";
@@ -251,7 +254,8 @@
 				67FDDE2E2277CF6D0058754F /* ViewController.swift in Sources */,
 				22EDF11C227A43DF006DF378 /* UploadDetailViewController.swift in Sources */,
 				22593B33227A2650003B9C0B /* ImageClassifier.mlmodel in Sources */,
-				2221D374227A5AED00196209 /* UploadCollectionViewCell.swift in Sources */,
+				22E0E750227CC77900428D1F /* SavedImagesViewController.swift in Sources */,
+				22E0E752227CE28600428D1F /* UploadedCollectionViewCell.swift in Sources */,
 				22EDF11A227A306B006DF378 /* TabBarHeight.swift in Sources */,
 				67FDDE2C2277CF6D0058754F /* AppDelegate.swift in Sources */,
 			);
@@ -404,7 +408,10 @@
 				DEVELOPMENT_TEAM = 64ZFR3XB85;
 				INFOPLIST_FILE = ImageClassifier/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.ImageClassifierSam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -421,7 +428,10 @@
 				DEVELOPMENT_TEAM = 64ZFR3XB85;
 				INFOPLIST_FILE = ImageClassifier/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.ImageClassifierSam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
